@@ -1,2 +1,2 @@
 # PC4_IVAN
-blog
+https://pc4ivan-miprimerblog.streamlit.app/
