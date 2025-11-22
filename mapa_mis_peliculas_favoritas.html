@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_dffb5a1eb9624354361cdf1e352897b6 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_dffb5a1eb9624354361cdf1e352897b6" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_dffb5a1eb9624354361cdf1e352897b6 = L.map(
+                "map_dffb5a1eb9624354361cdf1e352897b6",
+                {
+                    center: [10.0, 0.0],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 2,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_f7b66595ab6ddad31e2c2df872097492 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_f7b66595ab6ddad31e2c2df872097492.addTo(map_dffb5a1eb9624354361cdf1e352897b6);
+        
+    
+            var marker_a641665af8519c8441e1fbd5a0ab4dc3 = L.marker(
+                [40.6782, -73.9442],
+                {
+}
+            ).addTo(map_dffb5a1eb9624354361cdf1e352897b6);
+        
+    
+            var icon_dfdaeb8e6dbe2592b09a98e728b725c2 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "film",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_da347ebbe77b734978c297aac8babf2e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_489c3013f6685a5fb6fab3efe7b32cec = $(`<div id="html_489c3013f6685a5fb6fab3efe7b32cec" style="width: 100.0%; height: 100.0%;">     <b>Shiva Baby</b><br>     director: Emma Seligman<br>     año: 2020<br>     género: Comedia / Drama<br>     país: Estados Unidos<br>     protagonista: Rachel Sennott<br>     </div>`)[0];
+                popup_da347ebbe77b734978c297aac8babf2e.setContent(html_489c3013f6685a5fb6fab3efe7b32cec);
+            
+        
+
+        marker_a641665af8519c8441e1fbd5a0ab4dc3.bindPopup(popup_da347ebbe77b734978c297aac8babf2e)
+        ;
+
+        
+    
+    
+                marker_a641665af8519c8441e1fbd5a0ab4dc3.setIcon(icon_dfdaeb8e6dbe2592b09a98e728b725c2);
+            
+    
+            var marker_757e9a08c429ae8522a49b09a93ec3db = L.marker(
+                [40.4406, -79.9959],
+                {
+}
+            ).addTo(map_dffb5a1eb9624354361cdf1e352897b6);
+        
+    
+            var icon_89b0dfb3af1746ffe39f202f31f92f40 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "film",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_4f5836a1b3e262f302271cf387e08493 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_94a28e7df38903dcd1ee2c2e6ee357db = $(`<div id="html_94a28e7df38903dcd1ee2c2e6ee357db" style="width: 100.0%; height: 100.0%;">     <b>Las ventajas de ser invisible</b><br>     director: Stephen Chbosky<br>     año: 2012<br>     género: Drama / Adolescencia<br>     país: Estados Unidos<br>     protagonista: Logan Lerman<br>     </div>`)[0];
+                popup_4f5836a1b3e262f302271cf387e08493.setContent(html_94a28e7df38903dcd1ee2c2e6ee357db);
+            
+        
+
+        marker_757e9a08c429ae8522a49b09a93ec3db.bindPopup(popup_4f5836a1b3e262f302271cf387e08493)
+        ;
+
+        
+    
+    
+                marker_757e9a08c429ae8522a49b09a93ec3db.setIcon(icon_89b0dfb3af1746ffe39f202f31f92f40);
+            
+    
+            var marker_8061824c4a1a9065bdc87f07fa1b1dc9 = L.marker(
+                [35.6895, 139.6917],
+                {
+}
+            ).addTo(map_dffb5a1eb9624354361cdf1e352897b6);
+        
+    
+            var icon_405cad1d85d633ba25ab35461226f412 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "film",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_8739c0821bcea13ccfc478ae111500b9 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b232d38d432ccfd3be11f90d6bd8a06a = $(`<div id="html_b232d38d432ccfd3be11f90d6bd8a06a" style="width: 100.0%; height: 100.0%;">     <b>Kill Bill: Volumen 1</b><br>     director: Quentin Tarantino<br>     año: 2003<br>     género: Acción / Venganza<br>     país: Japón<br>     protagonista: Uma Thurman<br>     </div>`)[0];
+                popup_8739c0821bcea13ccfc478ae111500b9.setContent(html_b232d38d432ccfd3be11f90d6bd8a06a);
+            
+        
+
+        marker_8061824c4a1a9065bdc87f07fa1b1dc9.bindPopup(popup_8739c0821bcea13ccfc478ae111500b9)
+        ;
+
+        
+    
+    
+                marker_8061824c4a1a9065bdc87f07fa1b1dc9.setIcon(icon_405cad1d85d633ba25ab35461226f412);
+            
+    
+            var marker_0d1da36df736df5736b48df57a20c76c = L.marker(
+                [-34.6037, -58.3816],
+                {
+}
+            ).addTo(map_dffb5a1eb9624354361cdf1e352897b6);
+        
+    
+            var icon_49b05a6dfdb5798891311032b9ce293b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "film",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_17c7b1cf57156efa22c1a19013a9d535 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_2c349493c2e839cfaf8139375da3464a = $(`<div id="html_2c349493c2e839cfaf8139375da3464a" style="width: 100.0%; height: 100.0%;">     <b>Happy Together</b><br>     director: Wong Kar-wai<br>     año: 1997<br>     género: Drama / Romance<br>     país: Argentina<br>     protagonista: Tony Leung<br>     </div>`)[0];
+                popup_17c7b1cf57156efa22c1a19013a9d535.setContent(html_2c349493c2e839cfaf8139375da3464a);
+            
+        
+
+        marker_0d1da36df736df5736b48df57a20c76c.bindPopup(popup_17c7b1cf57156efa22c1a19013a9d535)
+        ;
+
+        
+    
+    
+                marker_0d1da36df736df5736b48df57a20c76c.setIcon(icon_49b05a6dfdb5798891311032b9ce293b);
+            
+    
+            var marker_c3561f62d03a57fcb06f9734a9734647 = L.marker(
+                [38.4405, -122.7144],
+                {
+}
+            ).addTo(map_dffb5a1eb9624354361cdf1e352897b6);
+        
+    
+            var icon_fbea975386e5e5592674be7e1fe64294 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "film",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_639772af52430e933df9379220354a3c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a5d93c76eadd1fcdb6764d9bc61ca19f = $(`<div id="html_a5d93c76eadd1fcdb6764d9bc61ca19f" style="width: 100.0%; height: 100.0%;">     <b>Scream</b><br>     director: Wes Craven<br>     año: 1996<br>     género: Terror / Suspenso<br>     país: Estados Unidos<br>     protagonista: Neve Campbell<br>     </div>`)[0];
+                popup_639772af52430e933df9379220354a3c.setContent(html_a5d93c76eadd1fcdb6764d9bc61ca19f);
+            
+        
+
+        marker_c3561f62d03a57fcb06f9734a9734647.bindPopup(popup_639772af52430e933df9379220354a3c)
+        ;
+
+        
+    
+    
+                marker_c3561f62d03a57fcb06f9734a9734647.setIcon(icon_fbea975386e5e5592674be7e1fe64294);
+            
+</script>
+</html>
