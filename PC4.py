@@ -118,7 +118,7 @@ elif  pagina_seleccionada == 'Experiencia':
 
     # Agregar un  texto para la respuesta
     texto_2 = """
-    A un inicio fue complicado, pues en mi primer ciclo de facultaad no pense encontrarme
+    A un inicio fue complicado, pues en mi primer ciclo de facultad no pense encontrarme
     con cursos que se traten sobre programacion por lo que se me hizo pesado a primera instancia.
     Pero con el paso de las clases entendi el programa y se me resulto bastante interesante. 
     Me gusto poder programar y crear un blog personal y una pagina sobre un tema de mi interes.
@@ -247,6 +247,7 @@ else:
         #st_folium(mapa_cusco, width=700, height=500)
 
     
+
 
 
 
