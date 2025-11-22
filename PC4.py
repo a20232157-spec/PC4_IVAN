@@ -45,7 +45,7 @@ pagina_seleccionada = st.sidebar.selectbox('Selecciona la sección que deseas ve
 if pagina_seleccionada == 'Inicio':
 
     # La función st.markdown permite centrar y agrandar la letra del título de la web en Streamlit.
-    st.markdown("<h1 style='text-align: center;'>Blog de Ivan</h1>", unsafe_allow_html=True)
+    st.markdown("<h1 style='text-align: center;'>Blog de Ivan😁</h1>", unsafe_allow_html=True)
 
     # <h1 style='text-align: center;'>Nombre de tu blog</h1>: Esto es una cadena de código HTML. 
     # La etiqueta <h1> se utiliza para el encabezado principal de una página web, y 
@@ -69,8 +69,8 @@ if pagina_seleccionada == 'Inicio':
     # Las columnas creadas se asignan a las variables col1 y col2.
 
     # En la primera columna colocamos la imagen de perfil
-    col1.image("ivancasacaroja.jpg", caption='mi foto:3', width=300)
-    col1.image("ivanamigos.jpg", caption='mi foto:3', width=300)
+    col1.image("fotoblog.jpg", caption='mi foto:3', width=300)
+    col1.image("ivanamigos.jpg", caption='mis amigos y yo :)', width=300)
 
     # col1.image("ellie.png", caption='Ellie', width=300): Esta línea está colocando una imagen en la primera columna (col1). 
     # La función image toma como primer argumento el nombre del archivo de la imagen que se desea mostrar. 
@@ -118,10 +118,11 @@ elif  pagina_seleccionada == 'Experiencia':
 
     # Agregar un  texto para la respuesta
     texto_2 = """
-    Me parecio intersante y me gusto mucho el curso
-    , me gusto aprender como programar y crear paginas web
-    de el tema de mi preferenci. Y lo aprendido lo usare
-    en el futuro y me servirar en un entorno laboral
+    A un inicio fue complicado, pues en mi primer ciclo de facultaad no pense encontrarme
+    con cursos que se traten sobre programacion por lo que se me hizo pesado a primera instancia.
+    Pero con el paso de las clases entendi el programa y se me resulto bastante interesante. 
+    Me gusto poder programar y crear un blog personal y una pagina sobre un tema de mi interes.
+    Seguire usando este programa en un futuro y quiero seguir aprendiendo sobre la aplicacion de Python.
     """
 
     # Mostramos el texto
@@ -158,8 +159,8 @@ elif  pagina_seleccionada == 'Experiencia':
     # Puedes cambiar la URL por la de tu video en YouTube o en otra plataforma de video.
 
     # O creamos un botón para ir al enlace del video con button
-    st.markdown(f"<div style='text-align: center;'><a href='https://drive.google.com/file/d/17pMsngLlhgm80yteG8LfQzr6DRb3Vcml/view?usp=drive_link' target='_blank'><button>Ver video aqui</button></a></div>", unsafe_allow_html=True)
-    st.markdown(f"<div style='text-align: center;'><a href='https://drive.google.com/file/d/1ymnCtkdHHwjUjT44UFESDKLvcZpo3ZsP/view?usp=drive_link' target='_blank'><button>Ver video aqui</button></a></div>", unsafe_allow_html=True)
+    st.markdown(f"<div style='text-align: center;'><a href='https://drive.google.com/file/d/17pMsngLlhgm80yteG8LfQzr6DRb3Vcml/view?usp=drive_link' target='_blank'><button>Ver video aqui⏯️📽️</button></a></div>", unsafe_allow_html=True)
+    st.markdown(f"<div style='text-align: center;'><a href='https://drive.google.com/file/d/1ymnCtkdHHwjUjT44UFESDKLvcZpo3ZsP/view?usp=drive_link' target='_blank'><button>Ver video aqui⏯️📽️</button></a></div>", unsafe_allow_html=True)
     # <div style='text-align: center;'><a href='https://drive.google.com/file/d/1REvRXSu3GuGD73w8j44135MkRiezd0gP/view?usp=drive_link' target='_blank'><button>Ver video</button></a></div>:
     # Esta es una cadena de código HTML.
     # La etiqueta <div> se utiliza para agrupar contenido en HTML.
@@ -196,7 +197,7 @@ else:
 
     # Mostramos el gráfico seleccionado
     if grafico_seleccionado == 'Gráfico de palabras':
-        st.markdown("<div style='text-align: justify; font-size: 20px;'>Aquí debe ir una breve interpretación de tu gráfico</div>", unsafe_allow_html=True)
+        st.markdown("<div style='text-align: justify; font-size: 20px;'>Este grafico muestra una nube de palabras donde algunas son</div>", unsafe_allow_html=True)
         st.image("graficopalabras.png", caption='Gráfico de nube de palabras', width=500)
         pass
     elif grafico_seleccionado == 'Gráfico de barras de equipos':
@@ -246,4 +247,5 @@ else:
         #st_folium(mapa_cusco, width=700, height=500)
 
     
+
 
