@@ -197,7 +197,7 @@ else:
 
     # Mostramos el gráfico seleccionado
     if grafico_seleccionado == 'Gráfico de palabras':
-        st.markdown("<div style='text-align: justify; font-size: 20px;'>Este grafico muestra una nube de palabras donde algunas son</div>", unsafe_allow_html=True)
+        st.markdown("<div style='text-align: justify; font-size: 20px;'>Este grafico muestra una nube de palabras que busca representar la frecuencia con que algunas aparecen.Las que mas se repiten aparecer con mayor tamaño y se ubican al centro del grafico</div>", unsafe_allow_html=True)
         st.image("graficopalabras.png", caption='Gráfico de nube de palabras', width=500)
         pass
     elif grafico_seleccionado == 'Gráfico de barras de equipos':
@@ -247,5 +247,6 @@ else:
         #st_folium(mapa_cusco, width=700, height=500)
 
     
+
 
 
