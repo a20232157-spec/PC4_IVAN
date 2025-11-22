@@ -182,7 +182,7 @@ else:
     st.markdown("<h1 style='text-align: center;'>Mis primeros gráficos</h1>", unsafe_allow_html=True)
 
     # Creamos una lista de gráficos
-    graficos = ['Gráfico de palabras', 'Gráfico de barras de tarjetas rojas', 'Gráfico de pastel', 'mapa de mis peliculas favoritas']
+    graficos = ['Gráfico de palabras', 'Gráfico de barras de tarjetas rojas', 'Gráfico de pastel', 'Mapa de mis peliculas favoritas']
 
     # Creamos un cuadro de selección en la página de gráficos
     grafico_seleccionado = st.selectbox('Selecciona un gráfico', graficos)
@@ -205,11 +205,11 @@ else:
         st.image("graficosbarras.png", caption='Gráfico de barras', width=500)
         pass
     elif grafico_seleccionado == 'Gráfico de pastel':
-        st.markdown("<div style='text-align: justify; font-size: 20px;'>Aquí debe ir una breve interpretación de tu gráfico</div>", unsafe_allow_html=True)
+        st.markdown("<div style='text-align: justify; font-size: 20px;'>Este grafico muestra el porcetanje de partidos ganados, perdidos y empatados de un equipo. Este tipo de graficos de pastel sirven para visualizar el porcentaje de un todo, dividiendolo en porciones que varian de tamaño dependiendo de la cantidad que representan</div>", unsafe_allow_html=True)
         st.image("graficopastel.png", caption='Gráfico de pastel', width=500)
         pass
-    elif grafico_seleccionado == 'mapa de mis peliculas favoritas':
-        st.markdown("<div style='text-align: justify; font-size: 20px;'>Aquí debe ir una breve interpretación de tu mapa</div>", unsafe_allow_html=True)
+    elif grafico_seleccionado == 'Mapa de mis peliculas favoritas':
+        st.markdown("<div style='text-align: justify; font-size: 20px;'>Este mapa muestra la ubicacion de donde fueron grabadas cinco de mis peliculas favoritas, junto a informacion relevante sobre esta, tal como año que salio, genero y director. Este mapa sirve para mostrar de forma visual en que lugar del mundo fueron dado ciertos acontecimientos </div>", unsafe_allow_html=True)
         # Si "mapa_cusco.html" es un archivo HTML (no una imagen), debes mostrarlo con st.components.v1.html
         import streamlit.components.v1 as components
         with open("mapa_mis_peliculas_favoritas.html", "r", encoding="utf-8") as f:
@@ -247,6 +247,7 @@ else:
         #st_folium(mapa_cusco, width=700, height=500)
 
     
+
 
 
 
