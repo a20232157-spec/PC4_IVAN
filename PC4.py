@@ -182,7 +182,7 @@ else:
     st.markdown("<h1 style='text-align: center;'>Mis primeros gráficos</h1>", unsafe_allow_html=True)
 
     # Creamos una lista de gráficos
-    graficos = ['Gráfico de palabras', 'Gráfico de barras de equipos', 'Gráfico de pastel', 'mapa de mis peliculas favoritas']
+    graficos = ['Gráfico de palabras', 'Gráfico de barras de tarjetas rojas', 'Gráfico de pastel', 'mapa de mis peliculas favoritas']
 
     # Creamos un cuadro de selección en la página de gráficos
     grafico_seleccionado = st.selectbox('Selecciona un gráfico', graficos)
@@ -197,11 +197,11 @@ else:
 
     # Mostramos el gráfico seleccionado
     if grafico_seleccionado == 'Gráfico de palabras':
-        st.markdown("<div style='text-align: justify; font-size: 20px;'>Este grafico muestra una nube de palabras que busca representar la frecuencia con que algunas aparecen.Las que mas se repiten aparecer con mayor tamaño y se ubican al centro del grafico</div>", unsafe_allow_html=True)
+        st.markdown("<div style='text-align: justify; font-size: 20px;'>Este grafico muestra una nube de palabras que busca representar la frecuencia con que las palabras aparecen.Las que mas se repiten aparecer con mayor tamaño y se ubican al centro del grafico. Esto puede servir para encontrar temas clave dentro de un texto.</div>", unsafe_allow_html=True)
         st.image("graficopalabras.png", caption='Gráfico de nube de palabras', width=500)
         pass
-    elif grafico_seleccionado == 'Gráfico de barras de equipos':
-        st.markdown("<div style='text-align: justify; font-size: 20px;'>Aquí debe ir una breve interpretación de tu gráfico</div>", unsafe_allow_html=True)
+    elif grafico_seleccionado == 'Gráfico de barras de tarjetas rojas':
+        st.markdown("<div style='text-align: justify; font-size: 20px;'>Este grafico de barras muestra el promedio de tarjetas rojas de cada equipo local. Este tipo de graficos sirve para comparar resultados y cantidades de varios grupos de forma visual, facilitando la comparacion</div>", unsafe_allow_html=True)
         st.image("graficosbarras.png", caption='Gráfico de barras', width=500)
         pass
     elif grafico_seleccionado == 'Gráfico de pastel':
@@ -247,6 +247,7 @@ else:
         #st_folium(mapa_cusco, width=700, height=500)
 
     
+
 
 
 
