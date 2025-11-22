@@ -181,7 +181,7 @@ else:
     st.markdown("<h1 style='text-align: center;'>Mis primeros gráficos</h1>", unsafe_allow_html=True)
 
     # Creamos una lista de gráficos
-    graficos = ['Gráfico de barras verticales de lenguas aisladas', 'Gráfico de barras de familias lingüísticas', 'Gráfico de barras horizontales de familias lingüísticas', 'mapa cusco']
+    graficos = ['Gráfico de palabras', 'Gráfico de barras de equipos', 'Gráfico de pastel', 'mapa de mis peliculas favoritas']
 
     # Creamos un cuadro de selección en la página de gráficos
     grafico_seleccionado = st.selectbox('Selecciona un gráfico', graficos)
@@ -195,23 +195,23 @@ else:
     
 
     # Mostramos el gráfico seleccionado
-    if grafico_seleccionado == 'Gráfico de barras verticales de lenguas aisladas':
+    if grafico_seleccionado == 'Gráfico de palabras':
         st.markdown("<div style='text-align: justify; font-size: 20px;'>Aquí debe ir una breve interpretación de tu gráfico</div>", unsafe_allow_html=True)
-        st.image("aisladas_base_datos.png", caption='Gráfico de lenguas aisladas', width=500)
+        st.image("graficopalabras.png", caption='Gráfico de nube de palabras', width=500)
         pass
-    elif grafico_seleccionado == 'Gráfico de barras de familias lingüísticas':
+    elif grafico_seleccionado == 'Gráfico de barras de equipos':
         st.markdown("<div style='text-align: justify; font-size: 20px;'>Aquí debe ir una breve interpretación de tu gráfico</div>", unsafe_allow_html=True)
-        st.image("lengua_familia_GB.png", caption='Gráfico de familias lingüísticas', width=500)
+        st.image("graficosbarras.png", caption='Gráfico de barras', width=500)
         pass
-    elif grafico_seleccionado == 'Gráfico de barras horizontales de familias lingüísticas':
+    elif grafico_seleccionado == 'Gráfico de pastel':
         st.markdown("<div style='text-align: justify; font-size: 20px;'>Aquí debe ir una breve interpretación de tu gráfico</div>", unsafe_allow_html=True)
-        st.image("lengua_familia_GB.png", caption='Gráfico de familias lingüísticas', width=500)
+        st.image("graficopastel.png", caption='Gráfico de pastel', width=500)
         pass
-    elif grafico_seleccionado == 'mapa cusco':
+    elif grafico_seleccionado == 'mapa de mis peliculas favoritas':
         st.markdown("<div style='text-align: justify; font-size: 20px;'>Aquí debe ir una breve interpretación de tu mapa</div>", unsafe_allow_html=True)
         # Si "mapa_cusco.html" es un archivo HTML (no una imagen), debes mostrarlo con st.components.v1.html
         import streamlit.components.v1 as components
-        with open("mapa_cusco.html", "r", encoding="utf-8") as f:
+        with open("mapa_mis_peliculas_favoritas.html", "r", encoding="utf-8") as f:
             html_content = f.read()
         components.html(html_content, height=500)
         pass
@@ -246,3 +246,4 @@ else:
         #st_folium(mapa_cusco, width=700, height=500)
 
     
+
